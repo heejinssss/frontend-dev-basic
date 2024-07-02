@@ -40,10 +40,13 @@ body {
 
 .search-box a, .search-box input, .search-box button {
 	display: block;
+}
+
+.search-box a, .search-box input, .search-box .btn-search {
 	float: right;
 }
 
-.search-box input{
+.search-box input {
 	outline: none;
 	border: none;
 	width: 260px;
@@ -51,15 +54,50 @@ body {
 	font-size: 16px;
 	font-weight: bold;
 }
+
+.search-box #keyboard {
+	font-size: 0;
+	width: 20px;
+	height: 12px;
+	margin: 15px 10px 0 0;
+	background: url('/ch03/images/n-splite.png') no-repeat -398px -267px / 442px 428px;
+}
+
+.search-box #dropdown {
+	font-size: 0;
+	width: 10px;
+	height: 5px;
+	margin: 20px 10px 0 0;
+	background: url('/ch03/images/n-splite.png') no-repeat -158px -151px / 442px 428px;	
+}
+
+.search-box .btn-search {
+	width: 45px;
+	height: 50px;
+	background-color: #19CE60;
+	cursor: pointer;
+}
+
+.search-box .btn-search button {
+	font-size: 0;
+	border: 0;
+	width: 26px;
+	height: 26px;
+	margin: 10px auto;
+	background: #19CE60 url('/ch03/images/n-splite.png') no-repeat -420px -24px / 442px 428px;
+	cursor: pointer;	
+}
 </style>
 </head>
 <body>
 	<div class="header">
 		<h1 class="logo">네이버</h1>
 		<div class="search-box">
-
-			<a href="">키보드</a>
-			<a href="">드롭다운</a>
+			<div class="btn-search">
+				<button>검색</button>
+			</div>
+			<a href="" id="dropdown">드롭다운</a>
+			<a href="" id="keyboard">키보드</a>
 			<input type="text">
 		</div>
 	</div>

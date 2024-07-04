@@ -24,7 +24,7 @@ myObject.f1();
 // apply: 호출되는 함수의 this를 파라미터로 전달되는 객체로 바꿔서 즉시 함수를 호출한다.
 myObject.f1.apply(yourObject);
 
-// 호출되는 함수의 this를 파라미터로 전달되는 객체로 바꿔서 즉시 함수를 호출한다.
+// 호출되는 함수의 this를 파라미터로 전달되는 객체로 바꿔서 즉시 함수를 호출한다. (다른 파라미터도 함께 전달)
 myObject.f2.call(yourObject, 'hello');
 myObject.f2.apply(yourObject, 'hello', 'again');
 
